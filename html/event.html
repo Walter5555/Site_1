@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/event.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <ul>
+                <li><a href="https://instagram.com/walter_53255"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <h3>Вул. Петра, 2а, Україна, Ів.-Франківськ, Телефон: +38(0)973-33-33-33</h3>
+        </div>
+    </header>
+    <nav>
+        <div class="logo">
+            <a href="../main.html">Бравісімо</a>
+        </div>
+        <ul>
+            <li>
+                <a href="menu.html">Меню</a>
+            </li>
+            <li>
+                <a href="history.html">Наша історія</a>
+            </li>
+            <li>
+                <a href="event.html">Події</a>
+            </li>
+            <li>
+                <a href="contact.html">Контакти</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="heading">
+        <h1>Події</h1>
+    </div>
+    <main>
+        <div class="content">
+
+        </div>
+        <div class="content2">
+            <h1>Події</h1>
+            <h2>в Бравісімо</h2>
+            <p>Наша компанія вже працює понад 14 років. В нашому закладі ви можете замовити бенкет, відсвяткувати день народження, також ви можете відсвяткувати випускний з групою чи школою. Наші пропозиції наведені нижче. <a href="#1">Перейти</a></p>
+        </div>
+        <div class="content3">
+            <h1 id="1">Ми</h1>
+            <h2>пропонуємо</h2>
+            <h3>Розмір зала: 30кв. м.</h3>
+            <h3>Рецепшин: Всередині</h3>
+            <h3>Вмістимість: 100 осіб</h3>
+            <h3>Планування: За вашим смаком</h3>
+        </div>
+        <div class="content4">
+
+        </div>
+        <div class="content5">
+            <ul id="fast-slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <h4>&#169;2019 Ресторан «Бравісімо»</h4>
+    </footer>
+
+
+    <script>
+        var slides = document.querySelectorAll('#fast-slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide,2000); 
+        function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide showing';
+        }
+    </script>
+</body>
+</html>

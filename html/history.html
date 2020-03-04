@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <ul>
+                <li><a href="https://instagram.com/walter_53255"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <h3>Вул. Петра, 2а, Україна, Ів.-Франківськ, Телефон: +38(0)973-33-33-33</h3>
+        </div>
+    </header>
+    <nav>
+        <div class="logo">
+            <a href="../main.html">Бравісімо</a>
+        </div>
+        <ul>
+            <li>
+                <a href="menu.html">Меню</a>
+            </li>
+            <li>
+                <a href="history.html">Наша історія</a>
+            </li>
+            <li>
+                <a href="event.html">Події</a>
+            </li>
+            <li>
+                <a href="contact.html">Контакти</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="heading">
+        <h1>Наша історія</h1>
+    </div>
+    <main>
+        <div class="content">
+
+        </div>
+        <div class="content2">
+            <h1>Наша</h1>
+            <h2>історія</h2>
+            <p>Заснування «Бравісімо» відбулося у 2005 році. Тоді, бізнесмен, Кос Дмитро заснував «Бравісімо», яке існує дотепер. Він доклав чи немало зусиль задля процвітання ресторану. На сьогодні «Бравісімо» є одним із найкращих ресторанів України.</p>
+        </div>
+        <div class="content3">
+            <h1>Працюємо</h1>
+            <h2>з 2005</h2>
+            <p>Ми готові обслуговувати своїх клієнтів кожен день хоч до пізна, тому що ми любимо своїх відвідувачів.Даний заклад буде популярним ще десятки років, тому що тут вишукана українська кухня з добавкою італійського стилю. Наша відвідувачі завжди позитивної думки про нас.</p>
+        </div>
+        <div class="content4">
+
+        </div>
+        <div class="content5">
+            <ul id="fast-slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+        </div>
+        <div class="content6">
+            <h1>Наша кухня найкраща</h1>
+            <p>Ми завжди готуємо з любов'ю. Слідкуємо за порядком як і на кухні, так і в залі. Беремо на роботу хороших кухарів, задля приготування хорошої їжі. Також у нас висока заробітня плата.</p>
+        </div>
+    </main>
+    <footer>
+        <h4>&#169;2019 Ресторан «Бравісімо»</h4>
+    </footer>
+
+
+    <script>
+        var slides = document.querySelectorAll('#fast-slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide,2000); 
+        function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide showing';
+        }
+    </script>
+</body>
+</html>
